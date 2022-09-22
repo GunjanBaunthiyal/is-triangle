@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find area</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="link">Is it a Triangle?</a>
+        <a href="quiz.html" class="link">Triangle Quiz</a>
+        <a href="hypotenuse.html" class="link">Find Hypotenuse</a>
+        <a href="area.html" class="link link-active">Find Area</a>
+    </nav>
+    <main>
+    <h1>Calculate area of Triangle</h1>
+    <div>
+        <label for="base" class="input-label">
+            <p>Enter base: </p></label>
+        <input type="number" class="input-text" id="base-input" />
+        <label for="height" class="input-label">
+            <p>Enter height: </p></label>
+        <input type="number" class="input-text"  id="height-input"/>
+            
+        <button id="submit-btn" type="submit">Click to find area</button>
+        <h2 id="output"></h2>
+
+        <h1>Formula used</h1>
+        <h3 class="hy-h3">1/2(base * height)</h3>
+        
+    </div>
+    </main>
+    <script src="area.js"></script>
+</body>
+</html>
