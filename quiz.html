@@ -19,32 +19,65 @@
         <h3>For each correct answer you will get 1 point</h3>
         <form class="quiz-form">
             <div class="question">
-                <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <p>1. What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
                 <label for="a1">
-                    <input type="radio" name="Q1" value="45°"/>45°
+                    <input type="radio" name="Q1" value="45°" class="radioQual" />45°
                 </label>
                 <label for="a2">
-                    <input type="radio" name="Q1" value="60°"/>60°
+                    <input type="radio" name="Q1" value="60°" class="radioQual"/>60°
                 </label>
                 <label for="a3">
-                    <input type="radio" name="Q1" value="90°"/>90°
+                    <input type="radio" name="Q1" value="90°" class="radioQual"/>90°
                 </label>
             </div>
 
             <div class="question">
-                <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+                <p>2. If a triangle has an angle of 90 degrees, what is it called?</p>
                 <label for="Obtuse">
-                    <input type="radio" name="Q2" value="Obtuse" />Obtuse
+                    <input type="radio" name="Q2" value="Obtuse" class="radioQual" />Obtuse
                 </label>
-                <label for="Acute">
-                    <input type="radio" name="Q2" value="Acute" />Acute
+                 <label for="Acute">
+                    <input type="radio" name="Q2" value="Acute" class="radioQual" />Acute
                 </label>
                 <label for="Right-angled">
-                    <input type="radio" name="Q2" value="Right-angled" />Right-angled
+                    <input type="radio" name="Q2" value="Right-angled" class="radioQual" />Right-angled
                 </label>
             </div>
+            <div class="question">
+                <p>3. Which ancient Greek philosopher studied triangles?</p>
+                <label for="Plato">
+                    <input type="radio" name="Q3" value="Plato" class="radioQual" />Plato
+                </label>
+                <label for="Socrates">
+                    <input type="radio" name="Q3" value="Socrates" class="radioQual" />Socrates
+                </label>
+                <label for="Pythagoras">
+                    <input type="radio" name="Q3" value="Pythagoras" class="radioQual" />Pythagoras
+                </label>
+            </div>
+            <div class="question">
+                <p>4. What's the name of the type of maths that studies the sides and angles of triangles?</p>
+                <label for="Geometry">
+                    <input type="radio" name="Q4" value="Geometry" class="radioQual" />Geometry
+                </label>
+                <label for="Trigonometry">
+                    <input type="radio" name="Q4" value="Trigonometry" class="radioQual" />Trigonometry
+                </label>
+                <label for="Geography">
+                    <input type="radio" name="Q4" value="Geography" class="radioQual" />Geography
+                </label>
+            </div>
+            <div class="question">
+                <p>5. True or false: A trapeze is a type of triangle?</p>
+                <label for="True">
+                    <input type="radio" name="Q5" value="True" class="radioQual" />True
+                </label>
+                <label for="False">
+                    <input type="radio" name="Q5" value="False" class="radioQual" />False
+             </label>
+            </div>
         </form>
-        <button id="submit-btn">Submit Answers</button>
+      <button id="submit-btn">Submit Answers</button>
         <h2 id = "output"></h2>
     </main>
     <script src="quiz.js"></script>

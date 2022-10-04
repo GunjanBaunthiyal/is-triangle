@@ -9,8 +9,14 @@ function calculateSumOfSquares(a,b) {
 }
 
 function calcHY() {
-    const sumOfSq = calculateSumOfSquares(Number(inputS[0].value), Number(inputS[1].value));
+    let b = Number(inputS[0].value);
+    let p = Number(inputS[1].value);
+    if(b>0&&p>0) {
+    const sumOfSq = calculateSumOfSquares(b, p);
     Output.innerText = "The length of hypotenuse is "+Math.sqrt(sumOfSq);
+} else{
+    Output.innerText = "Enter values greater than 0."
+}
 }
 
 HYBTN.addEventListener("click", calcHY);
