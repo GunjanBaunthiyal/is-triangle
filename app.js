@@ -5,11 +5,10 @@ const BTN = document.querySelector("#submit-btn");
 const Output = document.querySelector("#output");
 
 function calculateSum(a1,a2,a3) {
-    if(checkValid(a1,a2,a3)) {
         const sum = (a1+a2+a3);
         return sum;
 }
-}
+
 
 function checkValid(a,b,c) {
     if(a+b <= c || a+c <=b || b+c <= a )
@@ -17,6 +16,7 @@ function checkValid(a,b,c) {
     else
         return true;
 }
+
 function isTriangle() {
     const a = Number(input1.value);
     const b = Number(input2.value);
